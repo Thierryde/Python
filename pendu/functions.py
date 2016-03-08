@@ -31,7 +31,7 @@ def recup_nom_joueur():
 	# recup le nom du joueur, 3 caracteres minimum et seulement lettre et chiffres
 	# le return apres le print appelle la fonction en recursif
 
-	nom_joueur = input("Entrez votre pseudo (3 caracteres minimum) : ")
+	nom_joueur = raw_input("Entrez votre pseudo (3 caracteres minimum) : ")
 	if not nom_joueur.isalnum() or len(nom_joueur) < 3:
 		print("Ce nom est invalide.")
 		return recup_nom_joueur()
@@ -42,7 +42,7 @@ def recup_lettre():
 	# recup la lettre saisie par le joueur
 	# si ce n'est pas une lettre, appelle la fonction en recursif
 
-	lettre = input("Tapez une lettre : ")
+	lettre = raw_input("Tapez une lettre : ")
 	lettre = lettre.lower()
 	if len(lettre) > 1 or not lettre.isalpha():
 		print("Ce n'est pas une lettre valide.")

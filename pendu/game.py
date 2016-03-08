@@ -36,7 +36,7 @@ while continuer_partie != 'n':
 
 	scores[joueur] += nb_chances + 1
 
-	continuer_partie = input("Souhaitez vous continuer la partie? (y/n) ?")
+	continuer_partie = raw_input("Souhaitez vous continuer la partie? (y/n) ?")
 	continuer_partie = continuer_partie.lower()
 
 enregistrer_scores(scores)
